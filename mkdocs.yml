@@ -1,0 +1,62 @@
+site_name: StephenB87 mkdocs-material Search Example
+repo_url: https://github.com/stephenb87/mkdocs-material-example
+theme:
+  name: material
+  icon:
+    repo:
+      fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.sections
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.path
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  languages: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to Dark Mode
+      primary: blue
+      accent: teal
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to Light Mode
+      primary: blue
+      accent: lime
+
+nav:
+  - Home: index.md
+  - SearchExample:
+    - SearchExample: search-example/index.md
+    - Example1: search-example/example1/index.md
+    - Example2: search-example/example2/index.md
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+
+extra_css:
+  - stylesheets/extra.css
