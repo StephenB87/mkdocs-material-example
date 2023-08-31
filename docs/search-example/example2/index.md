@@ -1,4 +1,4 @@
-|| Key || Value ||
+| Key  | Value  |
 | :----| :----- |
 | Description | This is for example2 |
 | WebSiteA | <https://example2.abc.com/> |
